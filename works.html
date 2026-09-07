@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #afe3f7;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background: white;
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        /* ทำให้ข้อ 2 กดได้ */
+        .box-link {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        .box-link:hover .box {
+            transform: scale(1.02);
+        }
+
+        .box {
+            transition: 0.2s;
+        }
+
+        /* รูปเกียรติบัตร */
+        #certificate {
+            display: none;
+            max-width: 850px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #certificate img {
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>แฟ้มสะสมงาน (Portfolio)นายรัฐภูมิ โคษาสด</h1>
+
+    <p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
+
+
+    <!-- ข้อ 1 -->
+    <div class="box">
+        <h2>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h2>
+
+        <p>
+            รายละเอียดชิ้นงาน : เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง
+        </p>
+    </div>
+
+
+    <!-- ข้อ 2 กดแล้วโชว์เกียรติบัตร -->
+    <a href="#certificate" class="box-link" onclick="showCertificate()">
+
+        <div class="box">
+
+            <h2>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h2>
+
+            <p>
+                รายละเอียดชิ้นงาน : เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <!-- เกียรติบัตร -->
+    <div id="certificate">
+
+        <h2>เกียรติบัตรของผม</h2>
+
+        <img src="certificate1.jpg" alt="เกียรติบัตร">
+
+    </div>
+
+
+    <p>
+        <a href="index.html">กลับหน้าแรก</a>
+    </p>
+
+
+    <script>
+        function showCertificate() {
+            document.getElementById("certificate").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
